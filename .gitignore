@@ -8,10 +8,5 @@ dist/
 prisma/dev.db
 prisma/dev.db-journal
 
-# Secret Environment Files
-.env
-.env.*
-!.env.example
-
 # Runtime screenshots
 screenshots/
