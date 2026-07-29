@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
@@ -9,7 +12,12 @@ import { initCronJobs } from './services/cron';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || '*',
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Serve static screenshots folder

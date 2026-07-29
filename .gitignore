@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Production Build
+dist/
+
+# SQLite Database
+prisma/dev.db
+prisma/dev.db-journal
+
+# Secret Environment Files
+.env
+.env.*
+!.env.example
+
+# Runtime screenshots
+screenshots/
