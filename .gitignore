@@ -10,3 +10,9 @@ prisma/dev.db-journal
 
 # Runtime screenshots
 screenshots/
+
+# Secret Environment Files
+.env
+.env.*
+!.env.example
+
